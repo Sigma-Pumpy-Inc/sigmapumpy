@@ -1,0 +1,4 @@
+<h1>Náš web je v momentální odsátvce</h1>
+<h2>Koukněte na náš IG</h2>
+<a href="https://instagram.com/Sigma_Pumpy.cz"><button>IG ZDE</button></a>
+<h3>Děkujeme za pochopení</h3>
