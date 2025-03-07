@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+nav {
+    height: 80px;
+    background: #003135;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+.nav-items a {
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-items a:hover {
+    color: #9b9b9b;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #024950;
+    padding: 2rem;
+    min-height: 100vh;
+    height: auto;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    color: #9b9b9b;
+}
+
+main h2 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+main p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #9b9b9b;
+    margin-bottom: 1.5rem;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    margin: 1rem 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background: #00818d;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #006a73;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    background-color: #006a73;
+    max-width: 800px; /* Maximální šířka slideshow */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Slideshow slides */
+.mySlides {
+    display: none;
+    background-color: #024950;
+    text-align: center;
+    position: relative;
+}
+
+/* Zajištění stejné velikosti obrázků */
+.mySlides img {
+    width: 100%;
+    height: 400px; /* Fixní výška pro konzistentní velikost */
+    object-fit: cover; /* Oříznutí obrázku při zachování poměru stran */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Umístění tlačítek vedle obrázku */
+.prev {
+    left: -50px; /* Vždy vedle levého okraje obrázku */
+}
+
+.next {
+    right: -50px; /* Vždy vedle pravého okraje obrázku */
+}
+
+/* Hover efekt pro tlačítka */
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+
+/* Caption text */
+.text {
+  color: white;
+  background-color: #024950;
+  font-size: 15px;
+  padding: 8px 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.dots {
+    background-color: #006a73;
+    text-align: center;
+    color: #003135;
+    background-color: #024950;
+    height: auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  color: #003135;
+}
+
+.active, .dot:hover {
+  background-color: #9b9b9b;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@keyframes fade {
+  from {opacity: 3;}
+  to {opacity: 4}
+}
+
+.site-footer {
+    background: #003135;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.site-footer a p {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .nav-items a {
+        padding: 1rem;
+    }
+    
+    img {
+        width: 70%;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main h2 {
+        font-size: 3rem;
+    }
+
+    button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+        @media (max-width: 768px) {
+            .mySlides img {
+                height: 300px; /* Menší výška pro menší obrazovky */
+            }
+        
+            .prev {
+                left: -40px; /* Mírně upravená vzdálenost pro menší obrazovky */
+            }
+        
+            .next {
+                right: -40px;
+            }
+        }
+}
