@@ -1,6 +1,0 @@
-nav backround - 
-body,main backround - 
-footer bacround -
-button backround -
-button color - 
- 
