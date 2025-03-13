@@ -122,6 +122,22 @@ button:hover {
   text-align: center;
 }
 
+/* Next & previous buttons */
+.prev, .next {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover efekt pro tlačítka */
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
 .dots {
     background-color: #006a73;
     text-align: center;
