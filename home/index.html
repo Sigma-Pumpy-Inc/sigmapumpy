@@ -56,37 +56,48 @@
 <script>
     let slideIndex = 0;
     showSlides();
-    
+
     function showSlides() {
         let slides = document.getElementsByClassName("mySlides");
         let dots = document.getElementsByClassName("dot");
-    
+
+        // Skrytí všech snímků
         for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-        slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1; }
-    
+
+        // Oprava cyklického chování slideIndex
+        if (slideIndex >= slides.length) { 
+            slideIndex = 0; 
+        } else if (slideIndex < 0) { 
+            slideIndex = slides.length - 1; 
+        }
+
+        // Resetování aktivní třídy pro všechny tečky
         for (let i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
-    
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-    
-        setTimeout(showSlides, 6000); // Automatické přepnutí po 4s
+
+        // Zobrazení aktuálního snímku
+        slides[slideIndex].style.display = "block";
+        dots[slideIndex].className += " active";
+
+        // Nastavení automatického přepínání po 6 sekundách
+        setTimeout(showSlides, 6000); // Automatické přepnutí po 6s
     }
-    
+
+    // Funkce pro posun na další snímek
     function plusSlides(n) {
-        slideIndex += n - 1;
+        slideIndex += n;
         showSlides();
     }
-    
+
+    // Funkce pro posun na konkrétní snímek
     function currentSlide(n) {
         slideIndex = n - 1;
         showSlides();
     }
-    </script>
+</script>
     
     <footer class="site-footer">
         <div id="footer-content">
