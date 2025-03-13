@@ -125,7 +125,7 @@ button:hover {
 /* Next & previous buttons */
 .prev, .next {
     position: absolute;
-    top: 100%;
+    top: 105%;
     transform: translateY(-50%);
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.8);
@@ -140,11 +140,11 @@ button:hover {
 }
 
 .prev {
-    left: 550px;
+    left: 420px;
 }
 
 .next {
-    right: 550px;
+    right: 420px;
 }
 
 .dots {
