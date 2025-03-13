@@ -138,6 +138,15 @@ button:hover {
 .prev:hover, .next:hover {
     background-color: rgba(255, 255, 255, 1);
 }
+
+.prev {
+    left: 550px;
+}
+
+.next {
+    right: 550px;
+}
+
 .dots {
     background-color: #006a73;
     text-align: center;
