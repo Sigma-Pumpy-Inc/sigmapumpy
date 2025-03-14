@@ -84,7 +84,6 @@ button {
 button:hover {
     background: #006a73;
 }
-* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
@@ -108,9 +107,9 @@ button:hover {
 
 /* Zajištění stejné velikosti obrázků */
 .mySlides img {
-    width: 1000px;
+    width: 100%;
     height: 500px; /* Fixní výška pro konzistentní velikost */
-    object-fit: fill; /* Oříznutí obrázku při zachování poměru stran */
+    object-fit: cover; /* Oříznutí obrázku při zachování poměru stran */
 }
 
 .text {
@@ -140,11 +139,11 @@ button:hover {
 }
 
 .prev {
-    left: 420px;
+    left: 420px; /* Pozice pro desktop */
 }
 
 .next {
-    right: 420px;
+    right: 420px; /* Pozice pro desktop */
 }
 
 .dots {
@@ -177,8 +176,8 @@ button:hover {
 }
 
 @keyframes fade {
-  from {opacity: 3;}
-  to {opacity: 4}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 .site-footer {
@@ -195,42 +194,46 @@ button:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-
-    .nav-items a {
-        padding: 1rem;
-    }
-    
-    img {
-        width: 70%;
+    /* Slideshow Styles */
+    .slideshow-container {
+        max-width: 100%;
+        padding: 0 10px;
     }
 
+    .mySlides img {
+        height: 300px; /* Menší výška pro menší obrazovky */
+    }
+
+    .prev, .next {
+        position: absolute;
+        top: 80%;
+    }
+
+    /* Adjust the position of the prev and next buttons for mobile */
+    .prev {
+        left: 4px; /* Mírně upravená pozice pro mobilní zařízení */
+    }
+
+    .next {
+        right: 4px; /* Mírně upravená pozice pro mobilní zařízení */
+    }
+
+    /* Responsivní pro tečky */
+    .dots {
+        padding: 10px 0;
+    }
+
+    /* Hlavní text */
     main h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     main h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     button {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
     }
-
-    @media (max-width: 768px) {
-        @media (max-width: 768px) {
-            .mySlides img {
-                height: 300px; /* Menší výška pro menší obrazovky */
-            }
-        
-            .prev {
-                left: -40px; /* Mírně upravená vzdálenost pro menší obrazovky */
-            }
-        
-            .next {
-                right: -40px;
-            }
-        }
-
-     }
 }
