@@ -107,9 +107,9 @@ button:hover {
 
 /* Zajištění stejné velikosti obrázků */
 .mySlides img {
-    width: 1000px;
+    width: 100%;
     height: 500px; /* Fixní výška pro konzistentní velikost */
-    object-fit: fill; /* Oříznutí obrázku při zachování poměru stran */
+    object-fit: cover; /* Oříznutí obrázku při zachování poměru stran */
 }
 
 .text {
