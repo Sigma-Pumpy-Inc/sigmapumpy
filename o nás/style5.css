@@ -236,6 +236,11 @@ footer a:hover {
         height: auto;
     }
 
+    .on {
+        grid-template-columns: 1fr; 
+        width: 90%;
+    }
+    
     .vznik h2 {
         margin-left: 10px;
     }
