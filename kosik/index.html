@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Košík</title>
+    <script type="module" src="kosik.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="/domů/"><div class="logo">SIGMA PUMPY INDUSTRIES</div></a>
+        <div class="nav-items">
+            <a href="/domů/">Domů</a>
+            <a href="/produkty/">Produkty</a>
+            <a href="/kontakt/">Kontakt</a>
+            <a href="/o nás/">O nás</a>
+            <a href="/kosik/">Košík</a>
+        </div>
+    </nav>
+    
+    <div class="kosik"><h1>Košík</h1></div>
+    <div class="ul"><ul id="cart"></ul></div>
+<div class="formulare">
+    <div class="formular">
+        <div class="form-left">
+            <input type="text" id="name" placeholder="Jméno" required><br>
+            <input type="email" id="email" placeholder="E-mail" required><br>
+            <input type="text" id="address" placeholder="Adresa" required><br>
+        </div>
+    
+        <div class="form-right">
+            <div class="platba">
+                <h3>Platební metody</h3>
+                <input type="radio" id="applepay" name="paymentMethod" value="ApplePay">
+                <label for="applepay">ApplePay</label><br>
+    
+                <input type="radio" id="googlepay" name="paymentMethod" value="GooglePay">
+                <label for="googlepay">GooglePay</label><br>
+    
+                <input type="radio" id="bank" name="paymentMethod" value="Bankovní převod">
+                <label for="bank">Bankovní převod</label><br>
+    
+                <input type="radio" id="dobirka" name="paymentMethod" value="Dobírka">
+                <label for="dobirka">Dobírka</label><br>
+    
+                <input type="radio" id="paypal" name="paymentMethod" value="PayPal">
+                <label for="paypal">PayPal</label><br>
+            </div>
+            <div class="doručení">
+                <h3>Metody doručení</h3>
+                <input type="radio" id="ppl" name="deliveryMethod" value="PPL">
+                <label for="ppl">PPL</label><br>
+    
+                <input type="radio" id="dhl" name="deliveryMethod" value="DHL">
+                <label for="dhl">DHL</label><br>
+    
+                <input type="radio" id="ceskaposta" name="deliveryMethod" value="Česká pošta">
+                <label for="ceskaposta">Česká pošta</label><br>
+            </div>
+        </div>
+    </div>
+    <div class="ob"><button onclick="submitOrder()">Objednat</button></div>
+</body>
+
+<footer class="site-footer">
+    <div id="footer-content">
+        <p>© 2024 Sigma Pumpy Industries</p>
+        <a href="/cookies/"><p>Používáme soubory cookies</p></a>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vítejte</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/img/transparent_image.png">
+</head>
+<body>
+    <nav>
+        <a href="/domů/"><div class="logo">SIGMA PUMPY INDUSTRIES</div></a>
+        <div class="nav-items">
+            <a href="/domů/">Domů</a>
+            <a href="/produkty/">Produkty</a>
+            <a href="/kontakt/">Kontakt</a>
+            <a href="/o nás/">O nás</a>
+            <a href="/kosik/">Košík</a>
+        </div>
+    </nav>
+    <main>
+        <h1>SIGMA PUMPY představují</h1>
+        <h2>DACT ENERGY</h2>
+        <p>The drink that kicks your ass!!</p>
+        <div class="main">
+            <img src="/img/transparent_image.png" alt="Product Image" height="100%"/>
+            <a href="/produkty/"><button>CHCI TO</button></a> 
+        </div>
+        <br>
+  <div class="mySlides fade">
+    <img src="/img/slideshow/05CA86D6-F4C8-4528-AC05-91CAA27D9679.jpeg">
+    <div class="text">Donald Trump jmenoval do Kennedyho centra exšéfa tajných služeb </div>
+  </div>
+  <div class="mySlides fade">
+    <img src="/img/slideshow/0F097DE2-4E46-413D-AE2A-6DEFB15E09EF.jpeg" height="10px">
+    <div class="text">Lebron James po skórování nejvíce bodů v kariéru</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="/img/slideshow/2DD0C5E3-AB7B-4A59-B31B-C086598C2967.jpeg" height="">
+    <div class="text">Elon Musk při prvním povedeném vzletu raktety Falcon 9 </div>
+  </div>
+  <div class="mySlides fade">
+    <img src="/img/slideshow/4FD8E504-60CA-4714-A17E-A245D65A8071.jpg">
+    <div class="text">Saxana používá také DactEnergy</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="/img/slideshow/8C3BF507-603D-4A3A-B629-AB1C572E2582.jpg">
+    <div class="text">Jackie Chan propaguje DactEnergy</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="/img/slideshow/541E3E2C-0581-438F-BEBE-716F5C8E50E5.jpg">
+    <div class="text">John Xina používá Dact Energy k zakrytí plešky</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    </main>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+    
+            // Skrytí všech snímků
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+    
+            // Oprava cyklického chování slideIndex
+            if (slideIndex >= slides.length) { 
+                slideIndex = 0; 
+            } else if (slideIndex < 0) { 
+                slideIndex = slides.length - 1; 
+            }
+    
+            // Resetování aktivní třídy pro všechny tečky
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+    
+            // Zobrazení aktuálního snímku
+            slides[slideIndex].style.display = "block";
+            dots[slideIndex].className += " active";
+    
+            // Nastavení automatického přepínání po 6 sekundách
+            setTimeout(showSlides, 6000); // Automatické přepnutí po 6s
+        }
+    
+        // Funkce pro posun na další snímek
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides();
+        }
+    
+        // Funkce pro posun na konkrétní snímek
+        function currentSlide(n) {
+            slideIndex = n - 1;
+            showSlides();
+        }
+    </script>
+    
+    
+    <footer class="site-footer">
+        <div id="footer-content">
+            <p>© 2024 Sigma Pumpy Industries</p>
+            <a href="/cookies/"><p>Používáme soubory cookies</p></a>
+        </div>
+    </footer>
+</body>
+</html>
