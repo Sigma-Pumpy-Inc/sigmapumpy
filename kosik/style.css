@@ -197,13 +197,15 @@ ul.empty {
 .custom-alert button {
     padding: 10px;
     margin-top: 10px;
-    background-color: #003135;
+    background-color: #00818d;
     color: white;
     border: none;
     border-radius: 5px;
 }
 
-
+.custom-alert button:hover {
+    background-color: #003135;
+}
 
 /* Pravý sloupec (platební a doručovací metody) */
 .form-right {
