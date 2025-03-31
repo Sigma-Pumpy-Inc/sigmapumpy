@@ -201,6 +201,7 @@ ul.empty {
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .custom-alert button:hover {
