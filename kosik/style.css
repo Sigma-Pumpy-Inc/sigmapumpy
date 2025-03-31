@@ -1,0 +1,271 @@
+/* Základní styl pro všechny elementy */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+nav {
+    height: 80px;
+    background: #003135;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+.nav-items a {
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-items a:hover {
+    color: #9b9b9b;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #024950;
+    padding: 2rem;
+    min-height: 100vh;
+    height: auto;
+    text-align: center;
+}
+
+.kosik h1 {
+    color: #fff;
+    background-color: #024950;
+    text-align: center;
+    font-size: 100px;
+}
+
+ul {
+    background-color: #024950;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    list-style-type: disc; /* Odrážky pro košík */
+    padding-left: 20px; /* Nastavení odsazení pro položky */
+}
+
+ul.empty {
+    color: red;
+    list-style-type: none; /* Zrušení odrážek pro prázdný košík */
+    padding-left: 0; /* Odstraní odsazení pro prázdný košík */
+}
+
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 30px;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.cart-item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item-name {
+    font-weight: bold;
+}
+
+.cart-item-quantity {
+    margin-top: 5px;
+}
+
+.cart-item-quantity button {
+    padding: 5px;
+    align-items: center;
+    background-color: #00818d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.cart-item-quantity button:hover {
+    background-color: #003135;
+    cursor: pointer;
+}
+
+.cart-item-remove {
+    margin-top: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-item-remove:hover {
+    background-color: darkred;
+}
+
+.formulare {
+    background-color: #024950;
+    min-height: 75vh;
+}
+
+/* Formulář */
+.formular {
+    display: flex; /* Flexbox pro uspořádání do řádku */
+    justify-content: space-between; /* Mezera mezi sloupci */
+    gap: 10px; /* Snížení mezery mezi sloupci */
+    padding: 20px;
+    align-items: stretch; /* Zajistí, že oba sloupce budou mít stejnou výšku */
+}
+
+/* Levý sloupec (jméno, email, adresa) */
+.form-left {
+    flex: 1; /* 50% šířky */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-left input[type="text"],
+.form-left input[type="email"] {
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #00818d;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.form-left input[type="text"]:hover,
+.form-left input[type="email"]:hover {
+    background-color: #003135;
+    cursor: text;
+}
+
+.form-left input::placeholder {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.custom-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.custom-alert-content {
+    background: #006a73;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.custom-alert button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #003135;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+/* Pravý sloupec (platební a doručovací metody) */
+.form-right {
+    flex: 1; /* 50% šířky */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Pokud se nevejdou, přechází na další řádek */
+}
+
+.platba, .doručení {
+    background-color: #024950;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 45%; /* Nastavuje šířku, aby se vešly vedle sebe */
+}
+
+.platba h3, .doručení h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.platba input[type="radio"],
+.doručení input[type="radio"] {
+    margin-right: 10px;
+}
+
+.platba label, .doručení label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Tlačítko pro odeslání */
+.ob {
+    padding: 0px 0px 100px 0px;
+    text-align: center;
+    background-color: #024950;
+}
+
+.ob button {
+    padding: 1rem 5rem;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background: #00818d;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.ob button:hover {
+    background-color: #003135;
+}
+
+footer {
+    background: #003135;
+    padding: 20px 0px 10px 0px;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;   
+}
