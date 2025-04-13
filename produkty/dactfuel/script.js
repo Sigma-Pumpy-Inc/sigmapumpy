@@ -6,7 +6,7 @@ window.addDactFuelToCart = function() {
     const item = {
         id: "dact_fuel",  // Unikátní ID produktu Dact Fuel
         name: "Dact Fuel",  // Název produktu
-        imageUrl: "/img/12oz Can-2.png",  // Obrázek produktu
+        imageUrl: "/img/doypack.png",  // Obrázek produktu
         price: 350.00,  // Cena produktu Dact Fuel
         quantity: 1  // Výchozí množství
     };
