@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    height: 80px;
+    background: #003135;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+.nav-items a {
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-items a:hover {
+    color: #9b9b9b;
+}
+
+.toggle_btn {
+    display: none;
+    padding: 0 2rem;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(34, 34, 34, 0.0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: opacity 1s ease, visibility 1s ease, transform 0.3s linear;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10;
+  }
+
+  .dropdown_menu li {
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .dropdown_menu.open {
+    height: 240px;
+  }
+
+.main {
+    background: #024950;
+    padding: 40px;
+    height: auto;
+    min-height: 85vh;
+}
+
+.header {
+    text-align: center;
+    color: #fff;
+}
+
+.header h1 {
+    font-size: 3rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 20px;
+    justify-items: center;
+    background: #024950;
+}
+
+.box {
+    background: #003135;
+    color: white;
+    text-align: center;
+    box-shadow: -1px 0 5px 5px rgba(0, 0, 0, 0.099);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.box .img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.text h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.text h2 {
+    font-size: 1rem;
+    line-height: 18px;
+    margin: 10px 0;
+}
+
+.text h3 {
+    font-size: 1rem;
+}
+
+.ons {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;   
+}
+
+.on {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 20px;
+    justify-items: center;
+    background: #024950;
+}
+
+.on h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px; 
+}
+
+.vznik {
+    background-color: #003135;
+    border-radius: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -1px 0 5px 5px rgba(0, 0, 0, 0.099);
+    margin-bottom: 10px;
+}
+
+.vznik h2 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.vznik h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.vznik p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.warning p{
+    color: red;
+}
+
+.myslenka {
+    background-color: #003135;
+    border-radius: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -1px 0 5px 5px rgba(0, 0, 0, 0.099);
+    margin-bottom: 10px;
+}
+
+.myslenka h2 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.myslenka h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.myslenka p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+footer {
+    background: #003135;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    height: auto;
+}
+
+br {
+    display: block;
+    margin-bottom: 1px;
+    font-size: 1px;
+    line-height: 1px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #9b9b9b;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav-items {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: flex;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 100;
+      }
+    
+      .dropdown_menu li {
+        padding: 10px 20px;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+      }
+    
+      .dropdown_menu li a {
+        color: white;
+        text-decoration: none;
+      }
+    
+      .dropdown_menu a:hover {
+        color: #333;
+      }
+
+      .dropdown_menu.open {
+        display: block;
+      }
+    
+    .main {
+        height: auto;
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Zobrazení v jednom sloupci na menších obrazovkách */
+    }
+
+    .header h1 {
+        font-size: 2rem; /* Menší font pro mobilní zařízení */
+    }
+
+    .box {
+        width: 90%; /* Zajistí lepší přizpůsobení boxů na menších obrazovkách */
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .on {
+        grid-template-columns: 1fr; 
+        width: 90%;
+    }
+
+    .vznik h2 {
+        margin-left: 10px;
+    }
+
+    .vznik p {
+        margin-left: 0;
+        padding-bottom: 10px;
+        font-size: 1.25rem;
+    }
+
+    .myslenka h2 {
+        margin-left: 10px;
+    }
+
+    .myslenka p {
+        margin-left: 0;
+        padding-bottom: 10px;
+        font-size: 1.25rem;
+    }
+
+}

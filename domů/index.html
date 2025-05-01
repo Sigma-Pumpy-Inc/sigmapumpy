@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vítejte</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/img/transparent_image.png">
+</head>
+<body>
+    <nav>
+        <a href="/domů/"><div class="logo">SIGMA PUMPY INDUSTRIES</div></a>
+        <div class="nav-items">
+            <a href="/domů/">Domů</a>
+            <a href="/produkty/">Produkty</a>
+            <a href="/kontakt/">Kontakt</a>
+            <a href="/o nás/">O nás</a>
+            <a href="/kosik/">Košík</a>
+        </div>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+         </div>
+    </nav>
+    <div class="dropdown_menu">
+            <li><a href="/domů/">Domů</a></li>
+            <li><a href="/produkty/">Produkty</a></li>
+            <li><a href="/kontakt/">Kontakt</a></li>
+            <li><a href="/o nás/">O nás</a></li>
+            <li><a href="/kosik/">Košík</a></li>
+    </div>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+          
+            toggleBtn.onclick = function () {
+              dropDownMenu.classList.toggle('open')
+              const isOpen = dropDownMenu.classList.contains('open')
+          
+              toggleBtnIcon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars'
+            }
+           </script>
+    </div>
+    <main>
+        <h2>SIGMA PUMPY</h2>
+        <div class="main">
+            <img src="/img/transparent_image.png" alt="Product Image" height="100%"/>
+            <a href="/produkty/"><button>Prohlédnout produkty</button></a>
+        </div>
+    </main>
+    
+    <footer class="site-footer">
+        <div id="footer-content">
+            <p>© 2024 Sigma Pumpy Industries</p>
+            <a href="/cookies/"><p>Používáme soubory cookies</p></a>
+        </div>
+    </footer>
+</body>
+</html>
