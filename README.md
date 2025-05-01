@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/img/transparent_image.png">
 </head>
-    * {
+  <style>* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -92,6 +92,7 @@ button:hover {
         top: 600px; left: 145px;
     }
 }
+</style>
 <body>
     <nav>
         <a href="/domů/"><div class="logo">SIGMA PUMPY INDUSTRIES</div></a>
