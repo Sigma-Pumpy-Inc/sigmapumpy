@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.sigmapumpy.xyz/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.sigmapumpy.xyz/produkty/</loc>
+    <priority>0.80</priority>
+  </url>
+    <url>
+    <loc>https://www.sigmapumpy.xyz/produkty/dactenergy/</loc>
+    <priority>0.80</priority>
+  </url>
+    <url>
+    <loc>https://www.sigmapumpy.xyz/produkty/dactfuel/</loc>
+    <priority>0.80</priority>
+  </url>
+    </url>
+    <url>
+    <loc>https://www.sigmapumpy.xyz/o%20nás/</loc>
+    <priority>0.60</priority>
+  </url>
+    <url>
+    <loc>https://www.sigmapumpy.xyz/kontakt/</loc>
+    <priority>0.60</priority>
+  </url>
+    <url>
+    <loc>https://www.sigmapumpy.xyz/kosik/</loc>
+    <priority>0.50</priority>
+  </url>
+</urlset>
