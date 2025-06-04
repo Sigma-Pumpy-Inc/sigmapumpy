@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vítejte</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/img/transparent_image.png">
+</head>
+<body>
+  <div id="cookie-banner" class="cookie-banner">
+    <p>Tento web používá soubory cookies <a href="/cookies/">Více informací</a></p>
+    <button id="accept-cookies">Rozumím</button>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const banner = document.getElementById("cookie-banner");
+      const acceptBtn = document.getElementById("accept-cookies");
+
+      if (!localStorage.getItem("cookiesAccepted")) {
+          banner.style.display = "flex";
+      }
+
+      acceptBtn.addEventListener("click", function () {
+          localStorage.setItem("cookiesAccepted", "true");
+          banner.style.display = "none";
+      });
+  });
+</script>
+
+    <nav>
+        <a href="/domů/"><div class="logo">SIGMA PUMPY INDUSTRIES</div></a>
+        <div class="nav-items">
+            <a href="/domů/">Domů</a>
+            <a href="/produkty/">Produkty</a>
+            <a href="/kontakt/">Kontakt</a>
+            <a href="/o nás/">O nás</a>
+            <a href="/kosik/">Košík</a>
+        </div>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+         </div>
+    </nav>
+    <div class="dropdown_menu">
+            <li><a href="/domů/">Domů</a></li>
+            <li><a href="/produkty/">Produkty</a></li>
+            <li><a href="/kontakt/">Kontakt</a></li>
+            <li><a href="/o nás/">O nás</a></li>
+            <li><a href="/kosik/">Košík</a></li>
+    </div>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+          
+            toggleBtn.onclick = function () {
+              dropDownMenu.classList.toggle('open')
+              const isOpen = dropDownMenu.classList.contains('open')
+          
+              toggleBtnIcon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars'
+            }
+           </script>
+    </div>
+    <main>
+        <h2>SIGMA PUMPY</h2>
+        <div class="main">
+            <img src="/img/transparent_image.png" alt="Product Image" height="100%"/>
+            <a href="/produkty/"><button>Prohlédnout produkty</button></a>
+        </div>
+    </main>
+    <div class="novinky-container">
+      <h1 class="novinky-heading">NEJNOVĚJŠÍ ZPRÁVY</h1>
+    
+      <div class="novinka">
+        <img src="/img/f1.png" alt="SigmaPumpy F1">
+        <div class="novinka-info">
+          <p class="novinka-kategorie">MOTOR / F1</p>
+          <h2>SigmaPumpy získali pódium na Grand Prix Emilia-Romagna</h2>
+          <p>🏎️ Jaroslav Pátek: Vítěz s čistou energií
+            Na start přišel bez týmu, bez očekávání. Jen s plechovkou DACT ENERGY a zvláštním napětím v levém stehenním svalu.
+            Jaroslav Pátek řadil pocitově, zatáčel bez rukou a předjížděl jako posedlý. V posledním kole podřadil o tři kvalty najednou a proletěl cílem jako první.
+            Po závodě jen pokrčil rameny:
+            „Asi to bylo to stehno. Nebo ten drink.“
+            Jisté je jedno – vítězství není o výbavě. Je o energii. A ta musí být čistá.</p>
+        </div>
+      </div>
+    
+      <div class="novinka">
+        <img src="/img/psg.png" alt="Valnoha do PSG">
+        <div class="novinka-info">
+          <p class="novinka-kategorie">FOTBAL</p>
+          <h2>Ondřej Valnoha přestupuje do PSG</h2>
+          <p>⚽ Z přímáku v 90. minutě… trefil nejdřív holuba. Pak dal gól.
+            Stál u míče, vítr mu foukal do vlasů jako ve zpomaleném filmu. Všichni čekali střelu. On vystřelil. A trefil holuba, který v tu chvíli proletěl kolem.
+            Holub přežil. Míč se odrazil, od obránce, od tyče, od kolena gólmana – a skončil v bráně.
+            Rozhodující gól.
+            Říká se, že měl štěstí. Ale možná to bylo tím, že před zápasem pil DACT Energy.
+            Bez cukru, zato s přesností... skoro jako ten gól.</p>
+        </div>
+      </div>
+    
+      <div class="novinka">
+        <img src="/img/busgp.png" alt="Bus GP">
+        <div class="novinka-info">
+          <p class="novinka-kategorie">BUS GP</p>
+          <h2>Bangladéš GP</h2>
+          <p>🚌 Šel si jen koupit mango. Místo toho se ocitl uprostřed bangladéšského Bus GP – závodu bez pravidel, bez cíle a bez logiky. Řídit nemohl. Ale i tak vyhrál.
+            V ruce plechovka Dact Energy, na střeše autobusu, improvizovaně řídil dopravu a přeskakoval mezi vozy s jistotou, kterou by mu záviděl i Jackie Chan.
+            Bez pásu, bez plánu. Ale s energií.
+            Dact Energy – pro chvíle, které nikdo nečeká</p>
+        </div>
+      </div>
+    
+      <div class="novinka">
+        <img src="/img/banik.png" alt="Tobias Studnička">
+        <div class="novinka-info">
+          <p class="novinka-kategorie">BASKETBAL</p>
+          <h2>Z Mostu rovnou do Bostonu</h2>
+          <p>🏀 Tobias Studnička z Baníku Most měl být při alley-oopu přesný. Jenže spoluhráč mu nahrál o 3 metry vedle. Tak Tobias vyskočil, přistál na ramenou rozhodčího, odrazil se od něj jako trampolíny a zavěsil.
+            Tribuny šílely. Rozhodčí taky. Ale co – koš uznali.
+            Na otázku "jak jsi to udělal?" odpověděl: "Mám dobrý drink… a silný stehna."
+            Právě se chystá přestup do Bostonu, kde to bude chtít zopakovat na ještě větší scéně.
+            100 % rostlinný výkon. 0 % plánování.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer class="site-footer">
+        <div id="footer-content">
+            <p>© 2024 Sigma Pumpy Industries</p>
+            <a href="/cookies/"><p>Používáme soubory cookies</p></a>
+            <div class="credit">
+                <p>Created with ❤️ by <a href="https://martyc.eu">martyc.eu</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
