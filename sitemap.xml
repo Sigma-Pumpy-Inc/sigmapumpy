@@ -8,24 +8,23 @@
     <loc>https://www.sigmapumpy.xyz/produkty/</loc>
     <priority>0.80</priority>
   </url>
-    <url>
+  <url>
     <loc>https://www.sigmapumpy.xyz/produkty/dactenergy/</loc>
     <priority>0.80</priority>
   </url>
-    <url>
+  <url>
     <loc>https://www.sigmapumpy.xyz/produkty/dactfuel/</loc>
     <priority>0.80</priority>
   </url>
-    </url>
-    <url>
-    <loc>https://www.sigmapumpy.xyz/o%20nás/</loc>
+  <url>
+    <loc>https://www.sigmapumpy.xyz/o%20n%C3%A1s/</loc>
     <priority>0.60</priority>
   </url>
-    <url>
+  <url>
     <loc>https://www.sigmapumpy.xyz/kontakt/</loc>
     <priority>0.60</priority>
   </url>
-    <url>
+  <url>
     <loc>https://www.sigmapumpy.xyz/kosik/</loc>
     <priority>0.50</priority>
   </url>
