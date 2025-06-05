@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nás</title>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/img/transparent_image.png">
+</head>
+<body>
+    <nav>
+        <a href="/domu/"><div class="logo">SIGMA PUMPY INDUSTRIES</div></a>
+        <div class="nav-items">
+            <a href="/domu/">Domů</a>
+            <a href="/produkty/">Produkty</a>
+            <a href="/kontakt/">Kontakt</a>
+            <a href="/o-nas/">O nás</a>
+            <a href="/kosik/">Košík</a>
+        </div>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="dropdown_menu">
+        <li><a href="/domu/">Domů</a></li>
+        <li><a href="/produkty/">Produkty</a></li>
+        <li><a href="/kontakt/">Kontakt</a></li>
+        <li><a href="/o-nas/">O nás</a></li>
+        <li><a href="/kosik/">Košík</a></li>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+    <div class="main">
+        <div class="header">
+            <h1>Náš tým:</h1>
+        </div>
+
+        <section>
+            <!-- MACI -->
+            <div class="container">
+                <div class="box">
+                    <div class="img">
+                        <img src="/img/maci.JPEG" alt="Matěj Vondráček">
+                    </div>
+                    <div class="text">
+                        <h1>Matěj Vondráček</h1>
+                        <h3>Nadšenec do IT a programování, tvorby webových stránek</h3>
+                        <h2>Ředitel IT</h2>
+                    </div>
+                </div>
+
+                <!-- STUDNA -->
+                <div class="box">
+                    <div class="img">
+                        <img src="/img/studna.JPEG" alt="Tobias Studnička">
+                    </div>
+                    <div class="text">
+                        <h1>Tobias Studnička</h1>
+                        <h3>Něco o mně</h3>
+                        <h2>Ředitel Marketingu</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JARDA -->
+            <div class="container">
+                <div class="box">
+                    <div class="img">
+                        <img src="/img/jarda.JPEG" alt="Jaroslav Pátek">
+                    </div>
+                    <div class="text">
+                        <h1>Jaroslav Pátek</h1>
+                        <h3>Něco o mně</h3>
+                        <h2>Ředitel Výroby</h2>
+                    </div>
+                </div>
+
+                <!-- ONDŘÍK -->
+                <div class="box">
+                    <div class="img">
+                        <img src="/img/ondrik.JPEG" alt="Ondřej Valnoha">
+                    </div>
+                    <div class="text">
+                        <h1>Ondřej Valnoha</h1>
+                        <h3>Něco o mně</h3>
+                        <h2>Ředitel Složení</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+    <div class="ons">
+        <h1>O nás</h1>
+    </div>    
+    <div class="on">
+        <div class="vznik">
+                <h2>Vznik</h2>
+                    <p>Firma Sigma Pumpy Industries vznikla na podzim roku 2024</p>
+                    <p>Byla založena na popud projektu "Ekonomický záměr" v hodinách Ekonomiky</p>
+                    <div class="warning"><p>!!Jedná se o čistě smyšlenou firmu!!</p></div>
+        </div>  
+        <div class="myslenka">
+            <h2>Myšlenka</h2>
+            <h3>Proč Energetické nápoje?</h3>
+                <p>Naše přírodní energetické nápoje nabízejí zdravější alternativu k těm běžným, plným cukru a umělých látek. Věříme, že přírodní ingredience poskytují energii bez negativních účinků. Podporujeme aktivní životní styl a zdraví našich zákazníků.</p>
+        </div> 
+    </div>
+    </div>
+    <footer class="site-footer">
+        <div id="footer-content">
+            <p>© 2024 Sigma Pumpy Industries</p>
+            <a href="/cookies/"><p>Používáme soubory cookies</p></a>
+            <div class="credit">
+                <p>Created with ❤️ by <a href="https://martyc.eu">martyc.eu</a></p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/javascript/vannila-tilt.js"></script>
+</body>
+</body>
+</html>
